@@ -2,13 +2,14 @@ import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
 import {AiFillTwitterCircle, AiFillInstagram, AiFillLinkedin, AiFillYoutube} from 'react-icons/ai';
-import {BsFacebook} from 'react-icons/bs'
+import {BsFacebook} from 'react-icons/bs';
+import Image from "next/image";
 
 const Header = styled.header`
   width: 100%;
   min-height: 140px;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  /* display: grid;
+  grid-template-rows: 1fr 1fr; */
 `;
 
 const HeaderIcons = styled.section`
@@ -36,7 +37,32 @@ const HeaderIcons = styled.section`
 `;
 
 const Nav = styled.nav`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: calc(90rem / 16);
 
+  /* div del logo */
+  & .logo-container {
+    margin-left: 50px;
+  }
+
+  & .logo {
+    margin-top: 10px;
+    height: auto;
+  }
+
+  /* div del link */
+  & .link-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+  }
+
+  & .link {
+    color: black;
+    border-bottom: 1px solid black;
+  }
 `;
 
 export default function HeaderComp() {
@@ -52,11 +78,19 @@ export default function HeaderComp() {
         </div>
       </HeaderIcons>
       <Nav>
-        <div>
-          <Link href="/"><img src="" alt="Logo de mi blog" /></Link>
+        <div className="logo-container">
+          <Link href="/">
+            <Image 
+              src="/../public/img/Logo-negro.png" 
+              alt="Logo de mi blog" 
+              width={220} 
+              height={100}
+              className='logo'
+             />
+          </Link>
         </div>
-        <div>
-          <Link href="/perfil">Sobre mí</Link>
+        <div className="link-container">
+          <Link href="/perfil" className="link">Sobre mí</Link>
         </div>
       </Nav>
     </Header>
