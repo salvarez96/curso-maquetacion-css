@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import GlobalStyle from '../components/globalstyles';
 import HeaderMain from '../components/header/headerMain';
 import styled from 'styled-components';
@@ -18,18 +17,25 @@ const MainContainer = styled.main`
   background-size: cover;
   min-height: 100vh;
   display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
   grid-template-rows: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
   text-align: center;
   
   & h1 {
-    max-width: 850px;
+    grid-column: 2;
+    /* max-width: 850px; */
     margin-top: 60px;
     font-size: calc(45rem / 16);
     color: white;
     letter-spacing: 15px;
     line-height: calc(60rem / 16);
+  }
+
+  & .main__button {
+    grid-row: 2;
+    grid-column: 2;
   }
 `;
 /* ------------------------------------------- */
@@ -50,6 +56,7 @@ export default function Home() {
       <MainContainer img={backgroundImg} className={flaticon.className}>
         <h1>Conoce las novedades y noticias del Mundo Tech</h1>
         <GlobalButton 
+          className='main__button'
           link={'/blogs'} 
           buttonText={'Entra ya!'} 
           bgColor='var(--main-green)'

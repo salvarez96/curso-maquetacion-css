@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 
+// Estilos
+
 const MainButton = styled.button`
   background-color: ${props => props.backgroundColor};
   padding: 14px calc(18rem / 16);
@@ -10,16 +12,22 @@ const MainButton = styled.button`
   font-weight: bold;
   width: max-content;
 `;
+/* ------------------------------------------- */
 
+// Componente
 
-export default function GlobalButton({ link, buttonText, bgColor, border }) {
+export default function GlobalButton({ link, buttonText, bgColor, border, className }) {
   return(
-    <MainButton 
-      type="button"
-      backgroundColor={bgColor}
-      border={border}
-    >
-      <Link href={link}>{buttonText}</Link>
-    </MainButton>
+    <div className={className}>
+      <Link href={link}>
+        <MainButton 
+          type="button"
+          backgroundColor={bgColor}
+          border={border}
+        >
+          {buttonText}
+        </MainButton>
+      </Link>
+    </div>
  );
 }
