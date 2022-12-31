@@ -11,6 +11,7 @@ const MainButton = styled.button`
   font-size: calc(20rem /16);
   font-weight: bold;
   width: max-content;
+  font-family: inherit;
 `;
 /* ------------------------------------------- */
 

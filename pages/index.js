@@ -7,8 +7,8 @@ import GlobalButton from '../components/button';
 
 // Estilos
 
-import localFont from '@next/font/local';
-const flaticon = localFont({ src: '../public/fonts/Flaticon.ttf'});
+// import localFont from '@next/font/local';
+// const flaticon = localFont({ src: '../public/fonts/Flaticon.ttf'});
 
 const MainContainer = styled.main`
   background-image: url(${props => props.img.src});
@@ -53,7 +53,7 @@ export default function Home() {
       </Head>
       <GlobalStyle />
       <HeaderMain />
-      <MainContainer img={backgroundImg} className={flaticon.className}>
+      <MainContainer img={backgroundImg}>
         <h1>Conoce las novedades y noticias del Mundo Tech</h1>
         <GlobalButton 
           className='main__button'
