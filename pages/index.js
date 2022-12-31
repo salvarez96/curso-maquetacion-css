@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import GlobalStyle from '../components/globalstyles';
-import Header from '../components/header';
+import Header from '../components/headerComp';
 
 export default function Home() {
   return (
