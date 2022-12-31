@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
+import {AiFillTwitterCircle, AiFillInstagram, AiFillLinkedin, AiFillYoutube} from 'react-icons/ai';
+import {BsFacebook} from 'react-icons/bs'
 
 const Header = styled.header`
   width: 100%;
@@ -25,6 +27,12 @@ const HeaderIcons = styled.section`
     justify-self: end;
     margin-right: 50px;
   }
+
+  & .icons {
+    width: 24px;
+    height: 24px;
+    color: white;
+  }
 `;
 
 const Nav = styled.nav`
@@ -36,16 +44,16 @@ export default function HeaderComp() {
     <Header>
       <HeaderIcons>
         <div>
-          <a href="/">Facebook</a>
-          <a href="/">Twitter</a>
-          <a href="/">Instagram</a>
-          <a href="/">LinkedIn</a>
-          <a href="/">YouTube</a>
+          <a href="/"><BsFacebook className="icons" /></a>
+          <a href="/"><AiFillTwitterCircle className="icons" /></a>
+          <a href="/"><AiFillInstagram className="icons" /></a>
+          <a href="/"><AiFillLinkedin className="icons" /></a>
+          <a href="/"><AiFillYoutube className="icons" /></a>
         </div>
       </HeaderIcons>
       <Nav>
         <div>
-          <Link href="/">Logo</Link>
+          <Link href="/"><img src="" alt="Logo de mi blog" /></Link>
         </div>
         <div>
           <Link href="/perfil">Sobre mí</Link>
