@@ -9,7 +9,7 @@ const HeaderIconsSection = styled.section`
   width: 100%;
   height: calc(50rem / 16);
   display: grid;
-  background-color: #47cfac;
+  background-color: var(--main-green);
 
   & div {
     width: 300px;

@@ -16,7 +16,7 @@ const Nav = styled.nav`
   }
 
   & .logo {
-    margin-top: 10px;
+    margin-top: 6px;
     height: auto;
     width: auto;
   }
@@ -32,6 +32,7 @@ const Nav = styled.nav`
   & .link {
     color: black;
     border-bottom: 1px solid black;
+    font-size: calc(20rem / 16);
   }
 `;
 /* ------------------------------------------- */

@@ -1,7 +1,47 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import GlobalStyle from '../components/globalstyles';
 import HeaderMain from '../components/header/headerMain';
+import styled from 'styled-components';
+import backgroundImg from '../public/img/Cover.png';
+
+// Estilos
+
+import localFont from '@next/font/local';
+const flaticon = localFont({ src: '../public/fonts/Flaticon.ttf'});
+
+const MainContainer = styled.main`
+  background-image: url(${props => props.img.src});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  
+  & h1 {
+    max-width: 850px;
+    margin-top: 60px;
+    font-size: calc(45rem / 16);
+    color: white;
+    letter-spacing: 15px;
+    line-height: calc(60rem / 16);
+  }
+`;
+
+const MainButton = styled.button`
+  background-color: var(--main-green);
+  padding: 14px calc(18rem / 16);
+  border: none;
+  font-size: calc(20rem /16);
+  font-weight: bold;
+  width: max-content;
+`;
+/* ------------------------------------------- */
+
+// Componente
 
 export default function Home() {
   return (
@@ -14,9 +54,10 @@ export default function Home() {
       </Head>
       <GlobalStyle />
       <HeaderMain />
-      <main>
-        <h1>Hello world</h1>
-      </main>
+      <MainContainer img={backgroundImg} className={flaticon.className}>
+        <h1>Conoce las novedades y noticias del Mundo Tech</h1>
+        <MainButton type='button'>Entra ya!</MainButton>
+      </MainContainer>
     </>
   )
 }
