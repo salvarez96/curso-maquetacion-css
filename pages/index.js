@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import GlobalStyle from '../components/globalstyles';
-import Header from '../components/headerComp';
+import HeaderMain from '../components/header/headerMain';
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <GlobalStyle />
-      <Header />
+      <HeaderMain />
       <main>
         <h1>Hello world</h1>
       </main>
