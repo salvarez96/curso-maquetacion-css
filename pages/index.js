@@ -61,6 +61,7 @@ export default function Home() {
           buttonText={'Entra ya!'} 
           bgColor='var(--main-green)'
           border='none'
+          fontSize={'20'}
         />
       </MainContainer>
     </>

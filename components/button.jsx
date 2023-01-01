@@ -8,16 +8,20 @@ const MainButton = styled.button`
   background-color: ${props => props.backgroundColor};
   padding: 14px calc(18rem / 16);
   border: ${props => props.border};
-  font-size: calc(20rem /16);
+  font-size: calc(${props => props.fontSize}rem /16);
   font-weight: bold;
   width: max-content;
   font-family: inherit;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 /* ------------------------------------------- */
 
 // Componente
 
-export default function GlobalButton({ link, buttonText, bgColor, border, className }) {
+export default function GlobalButton({ link, buttonText, bgColor, border, fontSize, className }) {
   return(
     <div className={className}>
       <Link href={link}>
@@ -25,6 +29,7 @@ export default function GlobalButton({ link, buttonText, bgColor, border, classN
           type="button"
           backgroundColor={bgColor}
           border={border}
+          fontSize={fontSize}
         >
           {buttonText}
         </MainButton>

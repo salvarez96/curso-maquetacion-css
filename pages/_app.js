@@ -18,8 +18,8 @@ const robotoMono = Roboto_Mono({
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <main className={robotoMono.className}>
+    <div className={robotoMono.className}>
       <Component {...pageProps} />
-    </main>
+    </div>
   )
 }
