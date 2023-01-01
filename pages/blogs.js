@@ -1,17 +1,9 @@
 import HeaderMain from "../components/header/headerMain";
-import styled from "styled-components";
 import NewsSection from "../components/blogs/newsSection";
 import Head from "next/head";
 import FooterGlobal from "../components/footerGlobal";
+import BlogPostSection from "../components/blogs/blogPostSection";
 
-// Estilos
-
-const MainContainer = styled.main`
-  
-`;
-/* ------------------------------------------- */
-
-// Componente
 
 export default function BlogsPage() {
   return(
@@ -20,9 +12,10 @@ export default function BlogsPage() {
         <title>Página de blogs</title>
       </Head>
       <HeaderMain />
-      <MainContainer>
+      <main>
         <NewsSection className={'news__section'} />
-      </MainContainer>
+        <BlogPostSection />
+      </main>
       <FooterGlobal />
     </>
   );
