@@ -14,7 +14,7 @@ const MainContainer = styled.main`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 86vh;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   grid-template-rows: repeat(3, 1fr);

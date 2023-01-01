@@ -4,7 +4,7 @@ import GlobalButton from "../button";
 export default function BlogPreview({ className, children }) {
   return(
     <>
-      <div className={className}>
+      <article className={className}>
         {children}
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque mollitia velit quod distinctio accusamus consectetur porro excepturi fuga! Aliquid consectetur vitae tempore vero a fugiat. Praesentium exercitationem recusandae minus. Est!</p>
         <GlobalButton 
@@ -14,7 +14,7 @@ export default function BlogPreview({ className, children }) {
           link='/'
           fontSize={'12'}
         />
-      </div>    
+      </article>    
     </>
  );
 }
