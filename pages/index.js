@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import GlobalStyle from '../components/globalstyles';
 import HeaderMain from '../components/header/headerMain';
 import styled from 'styled-components';
 import backgroundImg from '../public/img/Cover.png';
@@ -51,7 +50,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-      <GlobalStyle />
       <HeaderMain />
       <MainContainer img={backgroundImg}>
         <h1>Conoce las novedades y noticias del Mundo Tech</h1>

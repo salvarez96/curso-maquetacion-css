@@ -1,7 +1,6 @@
 import HeaderMain from "../components/header/headerMain";
 import styled from "styled-components";
 import NewsSection from "../components/blogs/newsSection";
-import GlobalStyle from "../components/globalstyles";
 
 // Estilos
 
@@ -21,7 +20,6 @@ const MainContainer = styled.main`
 export default function BlogsPage() {
   return(
     <>
-      <GlobalStyle />
       <HeaderMain />
       <MainContainer>
         <NewsSection className={'news__section'}/>

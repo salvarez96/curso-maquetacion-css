@@ -15,7 +15,6 @@ const News = styled.section`
     grid-column: 2;
     align-self: center;
     font-size: calc(22rem / 16);
-    font-family: inherit;
   }
 
   & p {
