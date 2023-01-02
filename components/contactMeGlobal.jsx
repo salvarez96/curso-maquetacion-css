@@ -1,0 +1,44 @@
+import React from "react";
+import styled from "styled-components";
+import ContactMe from "./contactMe";
+
+// Estilos
+
+const ContactMeSection = styled.section`
+  width: 100%;
+  min-height: 300px;
+  background-color: var(--gray-bg);
+  display: flex;
+  align-items: center;
+
+  & .limiting-width-container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+`;
+/* ------------------------------------------- */
+
+// Componente
+
+export default function ContactMeGlobal() {
+  return(
+    <ContactMeSection>
+      <div className="limiting-width-container">
+        <ContactMe 
+          image={'/../public/img/013-newsletter.png'}
+          alt='Opened letter'
+          title='Contacto'
+          content='Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+        />
+        <ContactMe 
+          image={'/../public/img/006-like.png'}
+          alt='Heart with letter'
+          title='Escribe'
+          content='Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+        />
+      </div>
+    </ContactMeSection>
+ );
+}

@@ -2,6 +2,8 @@ import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 
+// Estilos
+
 const Contact = styled.div`
   max-width: 500px;
   margin: 0 auto;
@@ -20,6 +22,9 @@ const Contact = styled.div`
     padding-bottom: 5px;
   }
 `
+/* ------------------------------------------- */
+
+// Componente
 
 export default function ContactMe({ image, title, content, alt }) {
   return(
