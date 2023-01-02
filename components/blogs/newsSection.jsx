@@ -7,9 +7,14 @@ import BlogPreview from "./blogPreview";
 
 const News = styled.section`
   background-color: var(--gray-bg);
-  display: grid;
-  grid-template-columns: 1fr 3fr 0.5fr 1.5fr 1fr;
-  grid-template-rows: 1fr 6fr 1fr;
+  
+  & .content-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 0.5fr 1.5fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    max-width: 1475px;
+    margin: 0 auto;
+  }
 
   & h3 {
     grid-column: 2;
@@ -45,16 +50,18 @@ const News = styled.section`
 export default function NewsSection({ className }) {
   return(
     <News className={className}>
-      <h3>Noticias</h3>
-      <Image 
-        src={'/../public/img/main-news-img.png'}
-        alt='Vintage technology'
-        height={1000}
-        width={1000}  
-      />
-      <BlogPreview className={'blog-preview'}>
-        <h3>Título del Blogpost</h3>
-      </BlogPreview>
+      <div className="content-container">
+        <h3>Noticias</h3>
+        <Image 
+          src={'/../public/img/main-news-img.png'}
+          alt='Vintage technology'
+          height={1000}
+          width={1000}  
+        />
+        <BlogPreview className={'blog-preview'}>
+          <h3>Título del Blogpost</h3>
+        </BlogPreview>
+      </div>
     </News>  
  );
 }

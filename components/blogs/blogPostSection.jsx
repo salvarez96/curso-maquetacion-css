@@ -7,7 +7,8 @@ import BlogPreview from "./blogPreview";
 
 const BlogPostSectionContainer = styled.div`
   width: 80vw;
-  margin: 50px auto 100px;
+  margin: 50px auto 40px;
+  max-width: 1000px;
 
   & h2 {
     text-align: center;
@@ -22,7 +23,6 @@ const BlogPostSectionContainer = styled.div`
     gap: 30px;
     margin: 15px;
     margin-top: 25px;
-    min-height: 600px;
   }
 
   & img {
@@ -31,14 +31,16 @@ const BlogPostSectionContainer = styled.div`
   }
 
   & .blog-preview {
-    height: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   & .blogpost-container {
-    min-height: 580px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
   }
 `;
 /* ------------------------------------------- */
