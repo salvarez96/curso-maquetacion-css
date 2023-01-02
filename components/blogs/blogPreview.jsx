@@ -11,7 +11,7 @@ export default function BlogPreview({ className, children }) {
           buttonText={'Leer más'}
           bgColor='transparent'
           border={'1px solid var(--main-green)'}
-          link='/'
+          link='/blog'
           fontSize={'12'}
         />
       </article>    
