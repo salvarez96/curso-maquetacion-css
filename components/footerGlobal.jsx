@@ -4,35 +4,16 @@ import styled from "styled-components";
 // Estilos
 
 const Footer = styled.footer`
-  display: grid;
-  grid-template-rows: 1fr 2fr;
-  grid-template-columns: 1fr;
-  min-height: 120px;
   width: 100%;
-  justify-content: center;
-  align-items: center;
   background-color: var(--dark-blue);
 
-  & .decor-div {
-    grid-row: 1;
-    background-color: var(--main-green);
+  & p {
     width: 100%;
-    height: 100%;
-  }
-
-  & .text-div {
-    grid-row: 2;
-    width: 100%;
-    height: 100%;
+    padding: 1.8rem 0;
+    border-top: 30px solid var(--main-green);
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     font-size: calc(16rem / 16);
-
-    & p {
-      padding: 1em;
-    }
   }
 `;
 /* ------------------------------------------- */
@@ -42,10 +23,7 @@ const Footer = styled.footer`
 export default function FooterGlobal() {
   return(
     <Footer>
-      <div className="decor-div"></div>
-      <div className="text-div">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-    </Footer>    
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </Footer>
  );
 }
