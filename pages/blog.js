@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import HeaderMain from "../components/global-comps/headerMain";
 import FooterGlobal from "../components/global-comps/footerGlobal";
 import styled from "styled-components";
@@ -26,22 +27,28 @@ const ImgContainer = styled.div`
 // Componente
 
 export default function BlogPage() {
+
+  const { query } = useRouter();
+  // Link of this query is located in blogPreview.jsx
+  
   return(
     <>
       <Head>
-        <title>Página del blog</title>
+        <title>{query.blogTitle}</title>
       </Head>
       <HeaderMain />
       <main>
         <ImgContainer>
           <Image 
-            src={'/../public/img/main-news-img.png'}
+            src={query.img}
             width={1400}
             height={800}
-            alt='Vintage technology'
+            alt={query.alt}
           />
         </ImgContainer>
-        <BlogText/>
+        <BlogText 
+          blogPostTitle={query.blogTitle}
+        />
         <ContactMeGlobal />
       </main>
       <FooterGlobal />

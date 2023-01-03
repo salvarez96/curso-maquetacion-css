@@ -48,18 +48,28 @@ const News = styled.section`
 // Componente
 
 export default function NewsSection({ className }) {
+
+  const title = 'Título del Blogpost';
+  const imgSrc = '/../public/img/main-news-img.png';
+  const imgAlt = 'Vintage technology';
+
   return(
     <News className={className}>
       <div className="content-container">
         <h3>Noticias</h3>
         <Image 
-          src={'/../public/img/main-news-img.png'}
-          alt='Vintage technology'
+          src={imgSrc}
+          alt={imgAlt}
           height={1000}
           width={1000}  
         />
-        <BlogPreview className={'blog-preview'}>
-          <h3>Título del Blogpost</h3>
+        <BlogPreview 
+          className={'blog-preview'}
+          img={imgSrc}
+          alt={imgAlt}
+          blogTitle={title}
+        >
+          <h3>{title}</h3>
         </BlogPreview>
       </div>
     </News>  

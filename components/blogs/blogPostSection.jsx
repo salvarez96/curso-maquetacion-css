@@ -51,32 +51,32 @@ export default function BlogPostSection() {
   
   const images = [
     {
-      key: 1,
+      key: 'Título del Blogpost 1',
       src: '/../public/img/post-1.png',
       alt: 'Man with VR headset'
     }, 
     {
-      key: 2,
+      key: 'Título del Blogpost 2',
       src: '/../public/img/post-2.png',
       alt: 'Laptop on a desk'
     }, 
     {
-      key: 3,
+      key: 'Título del Blogpost 3',
       src: '/../public/img/post-3.png',
       alt: 'Man typing on a laptop'
     },
     {
-      key: 4,
+      key: 'Título del Blogpost 4',
       src: '/../public/img/post-1.png',
       alt: 'Man with VR headset'
     }, 
     {
-      key: 5,
+      key: 'Título del Blogpost 5',
       src: '/../public/img/post-2.png',
       alt: 'Laptop on a desk'
     }, 
     {
-      key: 6,
+      key: 'Título del Blogpost 6',
       src: '/../public/img/post-3.png',
       alt: 'Man typing on a laptop'
     },
@@ -94,8 +94,13 @@ export default function BlogPostSection() {
               width={450}
               height={250}
             />
-            <BlogPreview className='blog-preview'>
-              <p>Título del Blogpost</p>
+            <BlogPreview 
+              className='blog-preview'
+              img={image.src}
+              alt={image.alt}
+              blogTitle={image.key}  
+            >
+              <p>{image.key}</p>
             </BlogPreview>
           </div>
         ))}

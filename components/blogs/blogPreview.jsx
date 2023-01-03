@@ -1,7 +1,7 @@
 import React from "react";
 import GlobalButton from "../global-comps/button";
 
-export default function BlogPreview({ className, children }) {
+export default function BlogPreview({ className, children, img, alt, blogTitle }) {
   return(
     <>
       <article className={className}>
@@ -11,7 +11,12 @@ export default function BlogPreview({ className, children }) {
           buttonText={'Leer más'}
           bgColor='transparent'
           border={'1px solid var(--main-green)'}
-          link='/blog'
+          link={{
+            pathname: 'blog', 
+            /* querys are meant to be used in blogPreview.jsx, blogPostSection.jsx, newsSection.jsx
+            and blog.js */
+            query: {img: img, alt: alt, blogTitle: blogTitle}
+          }}
           fontSize={'12'}
         />
       </article>    

@@ -26,12 +26,12 @@ const BlogTextSection = styled.section`
 
 // Componente
 
-export default function BlogText() {
+export default function BlogText({ blogPostTitle }) {
   return(
     <BlogTextSection>
       <h3>Noticias</h3>
       <article>
-        <h2>Título del Blogpost</h2>
+        <h2>{ blogPostTitle }</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti sunt dicta quia non, aperiam debitis cum architecto quo maxime porro numquam sint molestiae est at repudiandae. Debitis aperiam nobis laboriosam!</p>
         Exercitationem odio adipisci voluptatum quam, nobis asperiores, facilis accusamus inventore error provident, voluptate officia cumque quod? Reiciendis amet error ut sapiente earum pariatur, vel facilis saepe laudantium cumque officia architecto.
         Minus expedita veniam dolor? Exercitationem, officiis totam aliquam saepe nostrum ab a rerum, fugit sapiente et dolor perspiciatis ipsam maxime libero cum recusandae illum debitis nemo deserunt culpa autem eum!

@@ -43,7 +43,7 @@ export default function HeaderNav() {
   return(
     <Nav>
       <div className="logo-container">
-        <Link href="/">
+        <Link href="/blogs">
           <Image 
             src="/../public/img/Logo-negro.png" 
             alt="Logo de mi blog" 
