@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+// Estilos
+
 const BlogTextSection = styled.section`
   width: 80vw;
   margin: calc(60rem / 16) auto;
@@ -20,6 +22,9 @@ const BlogTextSection = styled.section`
     margin-bottom: calc(25rem / 16);
   }
 `;
+/* ------------------------------------------- */
+
+// Componente
 
 export default function BlogText() {
   return(
