@@ -3,6 +3,7 @@ import ContactMeGlobal from "../components/global-comps/contactMeGlobal";
 import FooterGlobal from "../components/global-comps/footerGlobal";
 import HeaderMain from "../components/global-comps/headerGlobal";
 import HelloSection from "../components/profile/helloSection";
+import ProjectsSection from "../components/profile/projectsSection";
 
 export default function ProfilePage() {
   return(
@@ -11,8 +12,11 @@ export default function ProfilePage() {
         <title>Mi perfil</title>
       </Head>
       <HeaderMain />
-      <HelloSection />
-      <ContactMeGlobal />
+      <main>
+        <HelloSection />
+        <ProjectsSection />
+        <ContactMeGlobal />
+      </main>
       <FooterGlobal />
     </>
   );
