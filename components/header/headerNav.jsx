@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
+import headerLogo from "../../public/img/Logo-negro.png";
 
 // Estilos
 
@@ -17,8 +18,8 @@ const Nav = styled.nav`
 
   & .logo {
     margin-top: 6px;
+    width: 250px;
     height: auto;
-    width: auto;
   }
 
   /* div del link */
@@ -45,10 +46,8 @@ export default function HeaderNav() {
       <div className="logo-container">
         <Link href="/blogs">
           <Image 
-            src="/../public/img/Logo-negro.png" 
+            src={headerLogo} 
             alt="Logo de mi blog" 
-            width={220} 
-            height={100}
             className='logo'
             />
         </Link>

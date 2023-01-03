@@ -12,6 +12,8 @@ const Contact = styled.div`
   align-items: flex-end;
 
   & img {
+    width: 100px;
+    height: 100px;
     margin: 0 auto;
   }
 
@@ -31,8 +33,6 @@ export default function ContactMe({ image, title, content, alt }) {
     <Contact className="info-container">
       <Image 
         src={image}
-        width={100}
-        height={100}
         alt={alt}
       />
       <div>

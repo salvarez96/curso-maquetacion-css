@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import ContactMe from "./contactMe";
+import newsLetter from '../../public/img/013-newsletter.png';
+import likeImg from '../../public/img/006-like.png';
 
 // Estilos
 
@@ -27,13 +29,13 @@ export default function ContactMeGlobal() {
     <ContactMeSection>
       <div className="limiting-width-container">
         <ContactMe 
-          image={'/../public/img/013-newsletter.png'}
+          image={newsLetter}
           alt='Opened letter'
           title='Contacto'
           content='Lorem ipsum dolor sit amet consectetur adipisicing elit.'
         />
         <ContactMe 
-          image={'/../public/img/006-like.png'}
+          image={likeImg}
           alt='Heart with letter'
           title='Escribe'
           content='Lorem ipsum dolor sit amet consectetur adipisicing elit.'

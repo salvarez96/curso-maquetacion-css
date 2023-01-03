@@ -60,8 +60,9 @@ export default function NewsSection({ className }) {
         <Image 
           src={imgSrc}
           alt={imgAlt}
-          height={1000}
-          width={1000}  
+          height={900}
+          width={540}
+          priority
         />
         <BlogPreview 
           className={'blog-preview'}

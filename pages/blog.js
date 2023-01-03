@@ -44,6 +44,7 @@ export default function BlogPage() {
             width={1400}
             height={800}
             alt={query.alt}
+            priority
           />
         </ImgContainer>
         <BlogText 

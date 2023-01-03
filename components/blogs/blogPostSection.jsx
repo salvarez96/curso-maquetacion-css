@@ -25,22 +25,15 @@ const BlogPostSectionContainer = styled.div`
     margin-top: 25px;
   }
 
-  & img {
-    width: 100%;
-    height: auto;
-  }
-
-  & .blog-preview {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-
   & .blogpost-container {
     min-height: 500px;
     display: flex;
     flex-direction: column;
+    
+    & img {
+      width: 100%;
+      height: auto;
+    }
   }
 `;
 /* ------------------------------------------- */
@@ -91,8 +84,8 @@ export default function BlogPostSection() {
             <Image 
               src={image.src}
               alt={image.alt}
-              width={450}
-              height={250}
+              width={310}
+              height={190}
             />
             <BlogPreview 
               className='blog-preview'
