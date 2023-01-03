@@ -1,7 +1,7 @@
-import HeaderMain from "../components/header/headerMain";
+import HeaderMain from "../components/global-comps/headerMain";
 import NewsSection from "../components/blogs/newsSection";
 import Head from "next/head";
-import FooterGlobal from "../components/footerGlobal";
+import FooterGlobal from "../components/global-comps/footerGlobal";
 import BlogPostSection from "../components/blogs/blogPostSection";
 
 

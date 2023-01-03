@@ -1,5 +1,5 @@
 import { Roboto_Slab, Roboto, Roboto_Mono } from '@next/font/google';
-import GlobalStyle from '../components/globalstyles';
+import GlobalStyle from '../components/global-comps/globalstyles';
 
 // If loading a variable font, you don't need to specify the font weight
 const robotoSlab = Roboto_Slab({ 

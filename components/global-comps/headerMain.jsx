@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import HeaderNav from "./headerNav";
-import HeaderIcons from "./headerIcons";
+import HeaderNav from "../header/headerNav";
+import HeaderIcons from "../header/headerIcons";
 
 // Estilos
 

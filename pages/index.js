@@ -1,8 +1,8 @@
 import Head from 'next/head';
-import HeaderMain from '../components/header/headerMain';
+import HeaderMain from '../components/global-comps/headerMain';
 import styled from 'styled-components';
 import backgroundImg from '../public/img/Cover.png';
-import GlobalButton from '../components/button';
+import GlobalButton from '../components/global-comps/button';
 
 // Estilos
 
