@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import HeaderMain from "../components/global-comps/headerMain";
+import HeaderMain from "../components/global-comps/headerGlobal";
 import FooterGlobal from "../components/global-comps/footerGlobal";
 import styled from "styled-components";
 import ContactMeGlobal from "../components/global-comps/contactMeGlobal";
@@ -30,7 +30,7 @@ export default function BlogPage() {
 
   const { query } = useRouter();
   // Link of this query is located in blogPreview.jsx
-  
+
   return(
     <>
       <Head>

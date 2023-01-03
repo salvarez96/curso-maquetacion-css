@@ -1,5 +1,5 @@
 import React from "react";
-import GlobalButton from "../global-comps/button";
+import GlobalButton from "../global-comps/buttonGlobal";
 
 export default function BlogPreview({ className, children, img, alt, blogTitle }) {
   return(
