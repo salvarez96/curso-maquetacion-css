@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import styled from "styled-components";
 import {AiFillTwitterCircle, AiFillInstagram, AiFillLinkedin, AiFillYoutube} from 'react-icons/ai';
 import {BsFacebook} from 'react-icons/bs';
@@ -40,11 +41,11 @@ export default function HeaderIcons() {
   return(
     <HeaderIconsSection>
       <div>
-        <a href="/"><BsFacebook className="icons" /></a>
-        <a href="/"><AiFillTwitterCircle className="icons" /></a>
-        <a href="/"><AiFillInstagram className="icons" /></a>
-        <a href="/"><AiFillLinkedin className="icons" /></a>
-        <a href="/"><AiFillYoutube className="icons" /></a>
+        <Link href="/"><BsFacebook className="icons" /></Link>
+        <Link href="/"><AiFillTwitterCircle className="icons" /></Link>
+        <Link href="/"><AiFillInstagram className="icons" /></Link>
+        <Link href="/"><AiFillLinkedin className="icons" /></Link>
+        <Link href="/"><AiFillYoutube className="icons" /></Link>
       </div>
     </HeaderIconsSection>
  );
