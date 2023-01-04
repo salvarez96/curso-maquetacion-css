@@ -1,0 +1,32 @@
+[
+  {
+    "key": "Título del Blogpost 1",
+    "src": "/../public/img/post-1.png",
+    "alt": "Man with VR headset"
+  }, 
+  {
+    "key": "Título del Blogpost 2",
+    "src": "/../public/img/post-2.png",
+    "alt": "Laptop on a desk"
+  }, 
+  {
+    "key": "Título del Blogpost 3",
+    "src": "/../public/img/post-3.png",
+    "alt": "Man typing on a laptop"
+  },
+  {
+    "key": "Título del Blogpost 4",
+    "src": "/../public/img/post-1.png",
+    "alt": "Man with VR headset"
+  }, 
+  {
+    "key": "Título del Blogpost 5",
+    "src": "/../public/img/post-2.png",
+    "alt": "Laptop on a desk"
+  }, 
+  {
+    "key": "Título del Blogpost 6",
+    "src": "/../public/img/post-3.png",
+    "alt": "Man typing on a laptop"
+  }
+]

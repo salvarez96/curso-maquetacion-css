@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 import BlogPreview from "./blogPreview";
+import blogPreviewInfo from "./blogPreviewInfo.json";
 
 // Estilos
 
@@ -42,58 +43,25 @@ const BlogPostSectionContainer = styled.div`
 
 export default function BlogPostSection() {
   
-  const images = [
-    {
-      key: 'Título del Blogpost 1',
-      src: '/../public/img/post-1.png',
-      alt: 'Man with VR headset'
-    }, 
-    {
-      key: 'Título del Blogpost 2',
-      src: '/../public/img/post-2.png',
-      alt: 'Laptop on a desk'
-    }, 
-    {
-      key: 'Título del Blogpost 3',
-      src: '/../public/img/post-3.png',
-      alt: 'Man typing on a laptop'
-    },
-    {
-      key: 'Título del Blogpost 4',
-      src: '/../public/img/post-1.png',
-      alt: 'Man with VR headset'
-    }, 
-    {
-      key: 'Título del Blogpost 5',
-      src: '/../public/img/post-2.png',
-      alt: 'Laptop on a desk'
-    }, 
-    {
-      key: 'Título del Blogpost 6',
-      src: '/../public/img/post-3.png',
-      alt: 'Man typing on a laptop'
-    },
-  ];
-  
   return(
     <BlogPostSectionContainer>
       <h2>últimos blogposts</h2>
       <section>
-        {images.map(image => (
-          <div key={image.key} className='blogpost-container'>
+        {blogPreviewInfo.map(info => (
+          <div key={info.key} className='blogpost-container'>
             <Image 
-              src={image.src}
-              alt={image.alt}
+              src={info.src}
+              alt={info.alt}
               width={310}
               height={190}
             />
             <BlogPreview 
               className='blog-preview'
-              img={image.src}
-              alt={image.alt}
-              blogTitle={image.key}  
+              img={info.src}
+              alt={info.alt}
+              blogTitle={info.key}  
             >
-              <p>{image.key}</p>
+              <p>{info.key}</p>
             </BlogPreview>
           </div>
         ))}
