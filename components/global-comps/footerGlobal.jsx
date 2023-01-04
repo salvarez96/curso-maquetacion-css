@@ -9,7 +9,7 @@ const Footer = styled.footer`
 
   & p {
     width: 100%;
-    padding: 1.8rem 0;
+    padding: 1.8rem 20px;
     border-top: 30px solid var(--main-green);
     color: white;
     text-align: center;

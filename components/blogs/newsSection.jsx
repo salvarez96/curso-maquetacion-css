@@ -7,39 +7,76 @@ import BlogPreview from "./blogPreview";
 
 const News = styled.section`
   background-color: var(--gray-bg);
-  
-  & .content-container {
-    display: grid;
-    grid-template-columns: 1fr 3fr 0.5fr 1.5fr 1fr;
-    grid-template-rows: 1fr 6fr 1fr;
-    max-width: 1475px;
-    margin: 0 auto;
-  }
+`;
+
+const ContentContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 3fr 0.5fr 1.5fr 1fr;
+  grid-template-rows: 1fr 6fr 1fr;
+  max-width: 1475px;
+  margin: 0 auto;
 
   & h3 {
     grid-column: 2;
     align-self: center;
     font-size: calc(22rem / 16);
   }
-
+  
   & p {
     font-size: calc(18rem / 16);
   }
-
+  
   & img {
     grid-column: 2;
     width: 100%;
     height: auto;
   }
-
+  
   & .blog-preview {
     grid-column: 4;
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
-
+    
     & h3 {
       font-size: calc(28rem / 16);
+    }
+  }
+
+  @media (max-width: 1500px) {
+    & p {
+      margin: 20px 0;
+      font-size: calc(16rem / 16);
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    grid-template-columns: unset;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    width: 80vw;
+    max-width: 720px;
+    text-align: center;
+    
+    & .blog-preview {
+      grid-row: 3;
+      grid-column: 2;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    grid-template-rows: 0.2fr 0.5fr 1fr;
+    padding-bottom: 20px;
+
+    & h3 {
+      margin-top: 20px;
+    }
+
+    & img {
+      margin: 20px 0;
+    }
+
+    & button {
+      font-size: calc(13rem / 16);
     }
   }
 `;
@@ -55,7 +92,7 @@ export default function NewsSection({ className }) {
 
   return(
     <News className={className}>
-      <div className="content-container">
+      <ContentContainer className="content-container">
         <h3>Noticias</h3>
         <Image 
           src={imgSrc}
@@ -72,7 +109,7 @@ export default function NewsSection({ className }) {
         >
           <h3>{title}</h3>
         </BlogPreview>
-      </div>
+      </ContentContainer>
     </News>  
  );
 }

@@ -46,11 +46,10 @@ const Nav = styled.nav`
   & .link {
     color: black;
     border-bottom: 1px solid black;
-    font-size: calc(20rem / 16);
-
+    
     @media (max-width: 449px) {
       text-align: center;
-      border-bottom: none;
+      font-size: calc(17rem / 16);
     }
   }
 `;
