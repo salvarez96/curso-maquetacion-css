@@ -14,7 +14,13 @@ const Article = styled.article`
 
 // Componente
 
-export default function BlogPreview({ className, children, img, alt, blogTitle }) {
+export default function BlogPreview({ 
+  className, 
+  children, 
+  img, 
+  alt, 
+  blogTitle }) {
+  
   return(
     <>
       <Article className={className}>
@@ -28,8 +34,13 @@ export default function BlogPreview({ className, children, img, alt, blogTitle }
             pathname: 'blog', 
             /* querys are meant to be used in blogPreview.jsx, blogPostSection.jsx, newsSection.jsx
             and blog.js */
-            query: {img: img, alt: alt, blogTitle: blogTitle}
+            query: {
+              img: img, 
+              alt: alt, 
+              blogTitle: blogTitle
+            }
           }}
+          as={blogTitle}
           fontSize={'12'}
         />
       </Article>    

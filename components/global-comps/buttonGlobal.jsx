@@ -25,10 +25,18 @@ const MainButton = styled.button`
 
 // Componente
 
-export default function GlobalButton({ link, buttonText, bgColor, border, fontSize, className }) {
+export default function GlobalButton({ 
+  className, 
+  link, 
+  as,
+  bgColor, 
+  border, 
+  fontSize, 
+  buttonText }) {
+  
   return(
     <div className={className}>
-      <Link href={link}>
+      <Link href={link} as={as}>
         <MainButton 
           type="button"
           backgroundColor={bgColor}

@@ -80,7 +80,7 @@ export default function BlogPostSection() {
               className='blog-preview'
               img={info.src}
               alt={info.alt}
-              blogTitle={info.key}  
+              blogTitle={info.key}
             >
               <p>{info.key}</p>
             </BlogPreview>
