@@ -11,29 +11,50 @@ const BlogPostSectionContainer = styled.div`
   margin: 50px auto 40px;
   max-width: 1000px;
 
+  
   & h2 {
     text-align: center;
     border-bottom: 2px solid var(--gray-bg);
     padding-bottom: 30px;
     margin-bottom: 20px;
   }
-
+  
   & section {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    /* gap: 30px; */
+    margin: 15px auto;
     margin-top: 25px;
   }
-
+  
   & .blogpost-container {
     min-height: 500px;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 20px;
     
     & img {
       width: 100%;
       height: auto;
+    }
+    
+    @media (min-width: 500px) {
+      min-height: 550px;
+      max-width: 530px;
+    }
+    
+    @media (min-width: 776px) {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 380px) {
+    width: 96vw;
+
+    & .blogpost-container {
+      max-width: 300px;
     }
   }
 `;

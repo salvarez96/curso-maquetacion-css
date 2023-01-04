@@ -22,11 +22,6 @@ const MainContainer = styled.main`
   align-items: center;
   text-align: center;
   
-  @media (max-width: 900px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-  }
-
   & h1 {
     grid-column: 2;
     /* max-width: 850px; */
@@ -35,20 +30,25 @@ const MainContainer = styled.main`
     color: white;
     letter-spacing: 15px;
     line-height: calc(60rem / 16);
-
+    
     @media (max-width: 550px) {
       font-size: calc(25rem / 16);
       letter-spacing: 10px;
     }
   }
-
+  
   & .main__button {
     grid-row: 2;
     grid-column: 2;
-
+    
     @media (max-width: 550px) {
       font-size: calc(16rem / 16);
     }
+  }
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
   }
 `;
 /* ------------------------------------------- */
