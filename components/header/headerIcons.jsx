@@ -20,6 +20,10 @@ const HeaderIconsSection = styled.section`
     justify-content: space-between;
     justify-self: end;
     margin-right: 50px;
+
+    @media (max-width: 425px) {
+      margin: 0 auto;
+    }
   }
 
   & .icons {

@@ -14,6 +14,10 @@ const Nav = styled.nav`
   /* div del logo */
   & .logo-container {
     margin-left: 50px;
+
+    @media (max-width: 425px) {
+      margin: 0 auto;
+    }
   }
 
   & .logo {
@@ -28,12 +32,21 @@ const Nav = styled.nav`
     align-items: center;
     justify-content: flex-end;
     margin-right: 50px;
+
+    @media (max-width: 425px) {
+      margin: 0 auto;
+    }
   }
 
   & .link {
     color: black;
     border-bottom: 1px solid black;
     font-size: calc(20rem / 16);
+
+    @media (max-width: 449px) {
+      text-align: center;
+      border-bottom: none;
+    }
   }
 `;
 /* ------------------------------------------- */
