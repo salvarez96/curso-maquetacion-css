@@ -10,6 +10,7 @@ const Section = styled.section`
   min-height: 500px;
   display: flex;
   align-items: center;
+  padding: 40px 25px;
 
   & .main-container {
     max-width: 1475px;
@@ -17,11 +18,17 @@ const Section = styled.section`
     flex-direction: row;
     align-items: center;
     margin: 0 auto;
+    padding: 0 20px;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+      padding: 0;
+    }
   }
 
   & .image-container {
     max-width: 630px;
-    margin-left: 50px;
+    margin-left: 0 auto;
     
     & img {
       width: 100%;
@@ -43,8 +50,16 @@ const Section = styled.section`
     & p {
       font-size: calc(18rem / 16);
     }
-  }
+    
+    @media (max-width: 900px) {
+      margin: 20px 10px;
+      text-align: center;
 
+      & p {
+        font-size: calc(16rem / 16);
+      }
+    }
+  }
 `;
 /* ------------------------------------------- */
 
