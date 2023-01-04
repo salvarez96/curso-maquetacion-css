@@ -6,9 +6,6 @@ import GlobalButton from '../components/global-comps/buttonGlobal';
 
 // Estilos
 
-// import localFont from '@next/font/local';
-// const flaticon = localFont({ src: '../public/fonts/Flaticon.ttf'});
-
 const MainContainer = styled.main`
   background-image: url(${props => props.img.src});
   background-position: center;
