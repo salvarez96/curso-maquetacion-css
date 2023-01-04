@@ -23,6 +23,20 @@ const Contact = styled.div`
     margin-bottom: 10px;
     padding-bottom: 5px;
   }
+
+  @media (max-width: 850px) {
+    width: 40%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    font-size: calc(14rem / 16);
+
+    & img {
+      width: 60px;
+      height: auto;
+      margin-bottom: 12px;
+    }
+  }
 `
 /* ------------------------------------------- */
 
