@@ -13,6 +13,10 @@ const MainButton = styled.button`
   width: max-content;
   font-family: inherit;
 
+  @media (max-width: 475px) {
+    font-size: calc(16rem / 16);
+  }
+
   &:hover {
     cursor: pointer;
   }

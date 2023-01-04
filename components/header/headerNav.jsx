@@ -14,6 +14,8 @@ const Nav = styled.nav`
   /* div del logo */
   & .logo-container {
     margin-left: 50px;
+    display: flex;
+    align-items: center;
 
     @media (max-width: 425px) {
       margin: 0 auto;
@@ -21,9 +23,12 @@ const Nav = styled.nav`
   }
 
   & .logo {
-    margin-top: 6px;
     width: 250px;
     height: auto;
+
+    @media (max-width: 475px) {
+      width: 220px;
+    }
   }
 
   /* div del link */
