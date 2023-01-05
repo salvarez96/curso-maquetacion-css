@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 import BlogPreview from "./blogPreview";
-import blogPreviewInfo from "./blogPreviewInfo.json";
+import { blogsInfo } from "./blogPreviewInfo";
 
 // Estilos
 
@@ -68,7 +68,8 @@ export default function BlogPostSection() {
     <BlogPostSectionContainer>
       <h2>últimos blogposts</h2>
       <section>
-        {blogPreviewInfo.map(info => (
+        {blogsInfo.map(info => {
+          return (
           <div key={info.key} className='blogpost-container'>
             <Image 
               src={info.src}
@@ -85,7 +86,7 @@ export default function BlogPostSection() {
               <p>{info.key}</p>
             </BlogPreview>
           </div>
-        ))}
+        )})}
       </section>
     </BlogPostSectionContainer>
  );

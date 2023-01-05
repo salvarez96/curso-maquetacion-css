@@ -26,8 +26,9 @@ const ImgContainer = styled.div`
 
 // Componente
 
+// console.log(blogsInfo[0].src);
 export default function BlogPage() {
-
+  
   const { query } = useRouter();
   // Link of this query is located in blogPreview.jsx
 

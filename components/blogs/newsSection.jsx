@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 import BlogPreview from "./blogPreview";
+import newsImg from '../../public/img/main-news-img.png';
 
 // Estilos
 
@@ -87,23 +88,22 @@ const ContentContainer = styled.div`
 export default function NewsSection({ className }) {
 
   const title = 'Título del Blogpost';
-  const imgSrc = '/../public/img/main-news-img.png';
   const imgAlt = 'Vintage technology';
-
+  
   return(
     <News className={className}>
       <ContentContainer className="content-container">
         <h3>Noticias</h3>
         <Image 
-          src={imgSrc}
+          src={newsImg}
           alt={imgAlt}
-          height={900}
-          width={540}
+          // height={900}
+          // width={540}
           priority
         />
         <BlogPreview 
           className={'blog-preview'}
-          img={imgSrc}
+          img={newsImg}
           alt={imgAlt}
           blogTitle={title}
         >

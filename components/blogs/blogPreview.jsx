@@ -35,7 +35,7 @@ export default function BlogPreview({
             /* querys are meant to be used in blogPreview.jsx, blogPostSection.jsx, newsSection.jsx
             and blog.js */
             query: {
-              img: img, 
+              img: img.src, 
               alt: alt, 
               blogTitle: blogTitle
             }
